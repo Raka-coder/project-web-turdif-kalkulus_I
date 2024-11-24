@@ -14,7 +14,7 @@ A brief description of what this project does and who it's for
 
 - Github: [@Tazril Dwi Aprila](https://www.github.com/12345678167)
 
-## Prequisites
+## Prerequisites
 - node => v20.10.0
 - npm  => v10.2.3
 
