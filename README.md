@@ -6,14 +6,17 @@ A brief description of what this project does and who it's for
 
 ## Authors
 
-- [@Ginanjar Abdul Hakim](https://www.github.com/Maruzensky98)
+- Github: [@Ginanjar Abdul Hakim](https://www.github.com/Maruzensky98)
 
-- [@Luthfi Apriliansyah](https://www.github.com/Luthfi778)
+- Github: [@Luthfi Apriliansyah](https://www.github.com/Luthfi778)
 
-- [@Raka Restu Saputra](https://www.github.com/Raka-coder)
+- Github: [@Raka Restu Saputra](https://www.github.com/Raka-coder)
 
-- [@Tazril Dwi Aprila](https://www.github.com/12345678167)
+- Github: [@Tazril Dwi Aprila](https://www.github.com/12345678167)
 
+## Prequisites
+- node => v20.10.0
+- npm  => v10.2.3
 
 ## Installation
 
@@ -53,11 +56,9 @@ Start the server
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Project ini diberada dibawah [MIT](https://choosealicense.com/licenses/mit/) License
 
-MIT License
-
-Copyright (c) [2024] [Raka Restu Saputra]
+Copyright (c) [2024] [Raka Restu Saputra](https://www.github.com/Raka-coder).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
