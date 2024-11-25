@@ -50,7 +50,7 @@ function Navbar() {
               <img
                 src={imageLogo}
                 alt="logo"
-                className="h-6 w-6 mt-1 cursor-pointer"
+                className="h-6 w-6 cursor-pointer"
               />
               <div className="text-black dark:text-white font-bold text-2xl cursor-pointer ml-2">
                 turdif
