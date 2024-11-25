@@ -1,7 +1,7 @@
 
 # Project Web Turunan Diferensial (turdif) - Kalkulus I
 
-Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-orang akan lebih mudah untuk memahami materi turunan diferensial.Pada project ini sudah dilengkapi dengan kalkulator turunan diferensial sehingga dapat memudahkan dalam proses mengerjakan soal turunan.
+Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-orang akan lebih mudah untuk memahami materi turunan diferensial. Pada project ini sudah dilengkapi dengan kalkulator turunan diferensial sehingga dapat memudahkan dalam proses mengerjakan soal turunan.
 
 
 ## Authors
