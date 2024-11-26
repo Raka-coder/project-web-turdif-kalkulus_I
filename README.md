@@ -99,9 +99,8 @@ Start the server
 
 
 ## License
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-Project ini diberada dibawah [MIT](https://choosealicense.com/licenses/mit/) License
 
+Project ini diberada dibawah [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) turdif [2024] [Raka Restu Saputra](https://www.github.com/Raka-coder).
 
