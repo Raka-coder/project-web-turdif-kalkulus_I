@@ -28,13 +28,47 @@ Currently, two official plugins are available:
 - node => v20.10.0
 - npm  => v10.2.3
 
-## Installation
+## Installation & Setup
 
-Install project with npm
+Install project with vite
 
 ```bash
-  npm install project-app
+  npm create vite@latest
+  npm create vite@latest project-app -- --template react
+
   cd project-app
+  npm install
+```
+###Install Tailwind css to the project
+
+Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+```bash
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init -p
+```
+Add the paths to all of your template files in your tailwind.config.js file.
+```bash
+  /** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+```bash
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+```
+Start run the project-app, run your build process with npm run dev.
+```bash
+  npm run dev
 ```
     
 ## Run Locally
