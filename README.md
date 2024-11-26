@@ -39,7 +39,7 @@ Install project with vite
   cd project-app
   npm install
 ```
-###Install Tailwind css to the project
+Install Tailwind css to the project-app
 
 Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
 ```bash
