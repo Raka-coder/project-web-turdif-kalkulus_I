@@ -189,7 +189,7 @@ function KalkulatorTurunanCampuran() {
             {quickInputButtons.map((btn) => (
               <button 
                 key={btn}
-                className="bg-blue-100 hover:bg-blue-200 px-3 py-1 rounded"
+                className="bg-blue-100 hover:bg-blue-200 px-3 py-1 rounded-lg"
                 onClick={() => setExpression(prev => prev + btn)}
               >
                 {btn}
@@ -201,7 +201,7 @@ function KalkulatorTurunanCampuran() {
           <div className="flex space-x-4 mb-4">
             {/* Tombol Hitung */}
             <button 
-              className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600"
+              className="flex-1 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
               onClick={handleCalculate}
             >
               Hitung Turunan
@@ -209,7 +209,7 @@ function KalkulatorTurunanCampuran() {
   
             {/* Tombol Reset */}
             <button 
-              className="flex-1 bg-red-500 text-white py-2 rounded hover:bg-red-600"
+              className="flex-1 bg-red-500 text-white py-2 rounded-lg hover:bg-red-600"
               onClick={handleReset}
             >
               Reset
