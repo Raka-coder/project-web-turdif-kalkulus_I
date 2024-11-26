@@ -14,6 +14,12 @@ Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-ora
 
 - Github: [@Tazril Dwi Aprila](https://www.github.com/12345678167)
 
+## Features
+
+- Single Page
+- Light/dark mode button
+- Responsive 
+
 ## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -96,7 +102,19 @@ Start the server
 ```bash
   npm run dev
 ```
+## Tech Stack
 
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=vite" height="40" alt="vite logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="40" alt="tailwindcss logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" alt="npm logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="40" alt="nodejs logo"  />
+</div>
 
 ## License
 
