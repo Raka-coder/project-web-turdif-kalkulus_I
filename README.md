@@ -120,7 +120,7 @@ Start the server
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) turdif [2024] [Raka Restu Saputra](https://www.github.com/Raka-coder).
+Copyright (c) turdif 2024 [Raka Restu Saputra](https://www.github.com/Raka-coder).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
