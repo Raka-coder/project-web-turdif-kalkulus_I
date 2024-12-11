@@ -56,13 +56,14 @@ function CardTeams() {
         </h1>
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          data-aos="fade-up"
-          data-aos-duration="750"
+          
         >
           {teams.map((team) => (
             <div
               key={team.id}
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center h-auto"
+              data-aos="fade-up"
+              data-aos-duration="750"
             >
               <img
                 src={team.image}
