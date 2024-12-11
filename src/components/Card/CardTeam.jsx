@@ -64,7 +64,7 @@ function CardTeams() {
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center h-auto"
               data-aos="fade-up"
               data-aos-duration="750"
-              data-aos-delay={`${(index + 1)* 100}`}
+              data-aos-delay={`${(index + 1)* 300}`}
             >
               <img
                 src={team.image}
