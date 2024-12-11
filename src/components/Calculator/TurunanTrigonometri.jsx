@@ -107,7 +107,7 @@ const KalkulatorTurunanTrigonometri = () => {
         <div className="flex space-x-4">
           <button
             onClick={hitungTurunan}
-            className="w-full bg-green-500 font-medium text-white 
+            className="w-full bg-green-500 font-bold text-white 
               py-2 rounded-lg hover:bg-green-600 transition"
           >
             Hitung Turunan
