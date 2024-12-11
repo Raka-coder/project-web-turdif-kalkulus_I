@@ -156,7 +156,7 @@ const DerivativeCalculator = () => {
               <div>{error}</div>
             ) : (
               <>
-                <h2 className="font-bold text-lg mb-2 text-green-800">Hasil Turunan:</h2>
+                <h2 className="font-semibold text-lg mb-2 text-green-800">Hasil Turunan:</h2>
                 <MathJax inline>
                   {`\\(${latexResult}\\)`}
                 </MathJax>

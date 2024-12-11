@@ -226,7 +226,7 @@ function KalkulatorTurunanCampuran() {
           {/* Hasil Turunan */}
           {result && (
             <div className="bg-green-50 border border-green-200 p-4 rounded mb-4">
-              <h2 className="font-bold text-lg mb-2 text-green-800">Hasil Turunan:</h2>
+              <h2 className="font-semibold text-lg mb-2 text-green-800">Hasil Turunan:</h2>
               <p className="text-green-800">{result}</p>
             </div>
           )}
