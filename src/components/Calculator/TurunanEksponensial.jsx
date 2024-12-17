@@ -145,7 +145,7 @@ const KalkulatorTurunanEksponensial = () => {
                   ? 'text-green-700' 
                   : 'text-red-700'
               }`}>
-                Hasil Turunan :
+                Hasil Turunan:
               </h2>
               <div className={`text-base mb-2 ${
                 isValid 

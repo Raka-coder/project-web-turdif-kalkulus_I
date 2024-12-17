@@ -137,7 +137,7 @@ const KalkulatorTurunanTrigonometri = () => {
                 ? 'text-red-700' 
                 : 'text-green-700'
             }`}>
-              Hasil Turunan :
+              Hasil Turunan:
             </h2>
             {hasil.includes('tidak valid') || 
              hasil.includes('Pilih fungsi') || 
