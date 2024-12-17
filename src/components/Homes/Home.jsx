@@ -37,7 +37,7 @@ function HomeMenu() {
               to="materi"
               smooth={true}
               duration={1000}
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg cursor-pointer transition duration-300 ease-in-out"
             >
               Mulai Belajar
             </Link>
