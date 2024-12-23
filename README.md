@@ -6,13 +6,13 @@ Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-ora
 
 ## Authors
 
-- Github: [@Ginanjar Abdul Hakim](https://www.github.com/Maruzensky98)
+- Github: [Ginanjar Abdul Hakim](https://www.github.com/Maruzensky98)
 
-- Github: [@Luthfi Apriliansyah](https://www.github.com/Luthfi778)
+- Github: [Luthfi Apriliansyah](https://www.github.com/Luthfi778)
 
-- Github: [@Raka Restu Saputra](https://www.github.com/Raka-coder)
+- Github: [Raka Restu Saputra](https://www.github.com/Raka-coder)
 
-- Github: [@Tazril Dwi Aprila](https://www.github.com/12345678167)
+- Github: [Tazril Dwi Aprila](https://www.github.com/12345678167)
 
 ## Features
 
@@ -40,6 +40,7 @@ Install project with vite
 
 ```bash
   npm create vite@latest
+  or
   npm create vite@latest project-app -- --template react
 
   cd project-app
