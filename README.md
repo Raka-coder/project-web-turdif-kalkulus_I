@@ -119,5 +119,5 @@ Start the server
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file)
 
