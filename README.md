@@ -3,6 +3,9 @@
 
 Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-orang akan lebih mudah untuk memahami materi turunan diferensial. Pada project ini sudah dilengkapi dengan kalkulator turunan diferensial sehingga dapat memudahkan dalam proses mengerjakan soal turunan.
 
+![Image](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/blob/3eca74195111d0be53cac61bb1a6a971914d92c6/src/assets/images/turdif-light.JPG)
+
+![Image](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/blob/3eca74195111d0be53cac61bb1a6a971914d92c6/src/assets/images/turdif-dark.JPG)
 
 ## Authors
 
