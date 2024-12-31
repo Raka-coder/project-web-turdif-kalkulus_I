@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
           {/* Bagian 5 : Informasi hak cipta */}
           <div className="mt-12 text-center font-normal text-gray-300 dark:text-gray-300">
-            Copyright &copy; turdif {new Date().getFullYear()}
+            Copyright &copy; turdif 2024
             <a
               href="https://unsil.ac.id/"
               className="ml-1 hover:text-white"
@@ -186,7 +186,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               Universitas Siliwangi
-            </a>{" "}
+            </a>
             - Informatika 24 F.
           </div>
         </div>
