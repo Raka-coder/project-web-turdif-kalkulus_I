@@ -139,9 +139,9 @@ function Materi() {
                           Contoh Notasi: {notasi.notation}
                         </div>
 
-                        <ul className="space-y-2 pl-4 list-disc text-gray-700 dark:text-gray-300">
+                        <ul className="space-y-2 pl-4 text-gray-700 dark:text-gray-300">
                           {notasi.details.map((detail, detailIndex) => (
-                            <li key={detailIndex} className="pl-2">
+                            <li key={detailIndex} className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                               {detail}
                             </li>
                           ))}
@@ -191,16 +191,16 @@ function Materi() {
                 <br />
                 Dimana: <br />
                 <br />
-                <li className="pl-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="f(x)" /> adalah nilai fungsi. <br />
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="(x)" /> adalah variabel. <br />
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="n" /> adalah bilangan real yang menunjukkan
                   pangkat.
-                </li>
+                </div>
                 <p className="text-lg md:text-xl mt-4">
                   Karakteristik Fungsi Pangkat
                 </p>
@@ -209,26 +209,26 @@ function Materi() {
                   Bentuk Umum: Fungsi pangkat dapat memiliki berbagai bentuk
                   tergantung pada nilai <InlineMath math="(n)" />: <br />
                   <br />
-                  <li className="pl-2">
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Jika <InlineMath math="(n)" /> adalah bilangan bulat positif
                     (misalnya ( n = 2 )), fungsi tersebut adalah fungsi kuadrat.
                     <br />
-                  </li>
-                  <li className="pl-2">
+                  </div>
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Jika <InlineMath math="(n)=1" />, fungsi tersebut adalah
                     fungsi linear. <br />
-                  </li>
-                  <li className="pl-2">
+                  </div>
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Jika <InlineMath math="(n)" /> adalah bilangan bulat negatif
                     (misalnya ( n = -1 )), fungsi tersebut akan menghasilkan
                     fungsi rasional contoh:
                     <BlockMath math="( f(x) = \frac{1}{x} )" />
-                  </li>
-                  <li className="pl-2">
+                  </div>
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Jika <InlineMath math="(n)" /> adalah bilangan bulat negatif
                     (misalnya ( n = -1 )), fungsi tersebut akan menghasilkan
                     fungsi akar contoh: <BlockMath math="( f(x) = \sqrt{x} )" />
-                  </li>
+                  </div>
                 </p>
               </p>
             </div>
@@ -252,43 +252,43 @@ function Materi() {
                 Dimana: <br />
                 <br />
               </p>
-              <p className="text-lg md:text-xl">
-                <li className="pl-2">
+              <div className="space-y-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="f(x)" /> adalah nilai fungsi.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="(x)" /> adalah variabel.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="(m)" /> adalah kemiringan (slope) dari garis
                   yang menunjukkan seberapa banyak nilai{" "}
                   <InlineMath math="f(x)" /> berubah ketika{" "}
                   <InlineMath math="(x)" /> berubah.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   <InlineMath math="(b)" /> adalah intersep (nilai awal) pada
                   sumbu <InlineMath math="y" /> , yaitu nilai{" "}
                   <InlineMath math="f(x)" /> ketika{" "}
                   <InlineMath math="(x = 0)" />.
-                </li>
-              </p>
+                </div>
+              </div>
               <br />
               <p className="text-lg md:text-xl">
                 Sifat: <br />
                 <br />
               </p>
-              <p className="text-lg md:text-xl">
-                <li className="pl-2">
+              <div className="space-y-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Fungsi linear bersifat aditif, artinya jika kita memiliki dua
                   input, hasilnya adalah penjumlahan dari hasil fungsi untuk
                   masing-masing input.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Fungsi ini juga bersifat homogen, yang berarti jika kita
                   mengalikan input dengan suatu bilangan, hasil fungsi juga akan
                   berubah sesuai dengan bilangan tersebut.
-                </li>
-              </p>
+                </div>
+              </div>
             </div>
             {/*  */}
             <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-6 shadow-lg mt-12" data-aos="fade up" data-aos-duration="750">
@@ -308,18 +308,18 @@ function Materi() {
                 paling umum:
                 <p className="text-lg md:text-xl">
                   <br />
-                  <li className="pl-2">
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Turunan dari Sinus:{" "}
                     <BlockMath math="[ \frac{d}{dx}(\sin x) = \cos x ]" />
-                  </li>
-                  <li className="pl-2">
+                  </div>
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Turunan dari Kosinus:{" "}
                     <BlockMath math="[ \frac{d}{dx}(\cos x) = -\sin x ]" />
-                  </li>
-                  <li className="pl-2">
+                  </div>
+                  <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                     Turunan dari Tangen:{" "}
                     <BlockMath math="[ \frac{d}{dx}(\tan x) = \sec^2 x ]" />
-                  </li>
+                  </div>
                 </p>
               </p>
             </div>
@@ -343,13 +343,13 @@ function Materi() {
                 <br />
                 Rumus turunan untuk fungsi eksponensial: <br />
                 <br />
-                <li className="pl-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Turunan dari Fungsi Eksponensial Umum:{" "}
                   <BlockMath math="[ \frac{d}{dx}(a^x) = a^x \ln(a) ]" />
                   Dimana <InlineMath math="\ln(a)" /> adalah logaritma natural
                   dari basis <InlineMath math="(a)" />.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Turunan dari Fungsi Eksponensial Natural: Jika{" "}
                   <InlineMath math="(a=e)" /> Dimana <InlineMath math="(e)" />{" "}
                   adalah bilangan <InlineMath math="Euler" />, kira-kira{" "}
@@ -360,7 +360,7 @@ function Materi() {
                   satu-satunya fungsi eksponensial yang memiliki sifat unik di
                   mana turunan dari fungsi tersebut sama dengan fungsi itu
                   sendiri.
-                </li>
+                </div>
               </p>
             </div>
             {/*  */}
@@ -378,14 +378,14 @@ function Materi() {
                 <br />
                 Berikut adalah rumus turunan untuk fungsi logaritma yang paling
                 umum:
-                <li className="pl-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Turunan dari Logaritma Natural: Jika{" "}
                   <InlineMath math="( f(x) = \ln(x) )" /> (logaritma natural),
                   maka turunan dari fungsi ini adalah:{" "}
                   <BlockMath math="[ \frac{d}{dx}(\ln(x)) = \frac{1}{x} ]" />{" "}
                   Dimana <InlineMath math="(x>0)" />
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Turunan dari Logaritma dengan Basis <InlineMath math="(a)" />:
                   Jika <BlockMath math="( f(x) = \log_a(x) )" /> (logaritma
                   dengan basis <InlineMath math="(a)" />
@@ -393,7 +393,7 @@ function Materi() {
                   <BlockMath math="[ \frac{d}{dx}(\log_a(x)) = \frac{1}{x \ln(a)} ]" />{" "}
                   Dimana <InlineMath math="(a>0)" /> dan{" "}
                   <InlineMath math="(a\neq1)" />.
-                </li>
+                </div>
               </p>
             </div>
             {/*  */}
@@ -406,53 +406,53 @@ function Materi() {
               </p>
               <br />
               <br />
-              <p className="text-lg md:text-xl">
-                <li className="pl-2">
+              <div className="space-y-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Konstan: Jika <InlineMath math="f(x)=c" />, maka{" "}
                   <InlineMath math="f'(x)=0" />.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Pangkat: Jika <InlineMath math="f(x)=x^n" />, maka{" "}
                   <InlineMath math="f'(x)=nx^x-1" /> (f aksen = nx pangkat x -
                   1).
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Penjumlahan:{" "}
                   <InlineMath math="(f+g)'(x)=f'(x)+g'(x)" />.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Perkalian:{" "}
                   <InlineMath math="(fg)'(x)=f'(x)g(x)+f(x)g'(x)" />.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Pembagian:{" "}
                   <BlockMath math=" \frac{f}{g}'(x) = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}" />
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Aturan Rantai: Jika <InlineMath math="y=f(u)" /> dan{" "}
                   <InlineMath math="u=g(x)" /> maka{" "}
                   <BlockMath math="\frac{dy}{dx} = \frac{dy}{du}.\frac{du}{dx}" />
-                </li>
-              </p>
+                </div>
+              </div>
             </div>
             {/*  */}
             <div className="bg-gray-200 dark:bg-gray-900 rounded-lg p-6 shadow-lg mt-12 mb-12" data-aos="fade up" data-aos-duration="750">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600">
                 Contoh Penerapan
               </h2>
-              <p className="text-lg md:text-xl">
-                <li className="pl-2">
+              <div className="space-y-2">
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Fisika: Menentukan kecepatan (turunan posisi terhadap waktu)
                   dan percepatan (turunan kecepatan terhadap waktu) suatu benda.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Ekonomi: Menganalisis laju perubahan permintaan atau penawaran
                   suatu produk.
-                </li>
-                <li className="pl-2">
+                </div>
+                <div className="pl-2 relative before:content-['•'] before:absolute before:left-0">
                   Teknik: Menganalisis laju perubahan suatu proses atau sistem.
-                </li>
-              </p>
+                </div>
+              </div>
             </div>
           </div>
       
