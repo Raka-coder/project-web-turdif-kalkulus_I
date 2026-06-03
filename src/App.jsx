@@ -1,38 +1,43 @@
-// Component
-import { ThemeProvider } from "./components/ThemeDarkMode/ThemeContext";
-import Navbar from "./components/NavMenu/Navbar";
-import HomeMenu from "./components/Homes/Home";
-import Materi from "./components/Materi/Materi";
-import CardTeams from "./components/Card/CardTeam";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route } from 'react-router-dom'
+import { MathJaxContext } from 'better-react-mathjax'
+import { ThemeProvider } from '@/components/ThemeContext'
+import Layout from '@/components/Layout'
+import LandingPage from '@/pages/LandingPage'
+import CalculatorPage from '@/pages/CalculatorPage'
+import NotFoundPage from '@/pages/NotFoundPage'
+import ErrorPage from '@/pages/ErrorPage'
 
-// Calculator
-import DerivativeCalculator from "./components/Calculator/Turunan";
-import KalkulatorTurunanCampuran from "./components/Calculator/TurunanLog";
-import KalkulatorTurunanTrigonometri from "./components/Calculator/TurunanTrigonometri";
-import KalkulatorTurunanEksponensial from "./components/Calculator/TurunanEksponensial";
-
-// Style
-import "./assets/fonts/fonts.css";
+const mathjaxConfig = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+  },
+  asciimath: {
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    inlineMath: [['$', '$']],
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process',
+  },
+}
 
 function App() {
   return (
-    <>
+    <MathJaxContext config={mathjaxConfig}>
       <ThemeProvider>
-        <div>
-          <Navbar />
-          <HomeMenu />
-          <Materi />
-          <DerivativeCalculator />
-          <KalkulatorTurunanCampuran />
-          <KalkulatorTurunanTrigonometri />
-          <KalkulatorTurunanEksponensial />
-          <CardTeams />
-          <Footer />
-        </div>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/kalkulator" element={<CalculatorPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+          <Route path="/error" element={<ErrorPage />} />
+        </Routes>
       </ThemeProvider>
-    </>
-  );
+    </MathJaxContext>
+  )
 }
 
-export default App;
+export default App
