@@ -1,10 +1,11 @@
 import { useState } from "react"
+import PropTypes from "prop-types"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
-import { BlockMath, InlineMath } from "@/components/MathJaxMath"
+import { BlockMath, InlineMath } from "@/components/KaTeXMath"
 import { Calculator, RotateCcw, AlertCircle } from "lucide-react"
 
 function parsePolinomial(expr) {
@@ -58,7 +59,7 @@ const rules = [
   { name: "Aturan Rantai", latex: "\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)" },
 ]
 
-export default function TurunanUmumTab() {
+export default function TurunanUmumTab({ onCalculate }) {
   const [fx, setFx] = useState("")
   const [order, setOrder] = useState(1)
   const [result, setResult] = useState(null)
@@ -82,8 +83,11 @@ export default function TurunanUmumTab() {
         terms = derivTerms(terms)
         steps.push({ order: i + 1, latex: formatTermsLatex(terms) })
       }
-      setResult({ steps, finalLatex: steps[steps.length - 1].latex })
+      const finalResult = { steps, finalLatex: steps[steps.length - 1].latex }
+      setResult(finalResult)
       setError("")
+      // Call the parent callback
+      if (onCalculate) onCalculate(finalResult, fx)
     } catch {
       setError("Gagal memproses fungsi. Periksa format penulisan.")
       setResult(null)
@@ -197,3 +201,7 @@ export default function TurunanUmumTab() {
     </div>
   )
 }
+
+TurunanUmumTab.propTypes = {
+  onCalculate: PropTypes.func,
+};

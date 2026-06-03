@@ -10,18 +10,18 @@ export default function NotFoundPage() {
   return (
     <div className="min-h-screen bg-background text-foreground flex items-center justify-center relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size:[24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size:[24px_24px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
       {/* Glow Effects */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/10 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[200px] bg-destructive/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-75 bg-primary/10 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-100 h-50 bg-destructive/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-2xl px-4 text-center">
         {/* Floating Math Cards */}
         <div className="relative mb-8 h-48 sm:h-56 flex items-center justify-center">
           {/* Main Error Code */}
           <div className="relative">
-            <h1 className="text-[10rem] sm:text-[14rem] font-bold font-heading leading-none tracking-tighter bg-gradient-to-br from-primary/20 via-primary/10 to-transparent bg-clip-text text-transparent select-none">
+            <h1 className="text-[10rem] sm:text-[14rem] font-bold font-heading leading-none tracking-tighter bg-linear-to-br from-primary/20 via-primary/10 to-transparent bg-clip-text text-transparent select-none">
               {is404 ? "404" : error?.status || "Error"}
             </h1>
             <div className="absolute inset-0 flex items-center justify-center">
