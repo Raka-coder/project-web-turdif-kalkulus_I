@@ -31,9 +31,9 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<LandingPage />} />
             <Route path="/kalkulator" element={<CalculatorPage />} />
-            <Route path="*" element={<NotFoundPage />} />
           </Route>
           <Route path="/error" element={<ErrorPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </ThemeProvider>
     </MathJaxContext>

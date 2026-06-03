@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <img src="src/assets/logo/Logo Biru.png" alt="turdif Logo" width="100" />
+  <img src="src/assets/logo/turdif.svg" alt="turdif Logo" width="100" />
 
   # Turdif — Turunan Diferensial
 
@@ -33,19 +33,8 @@
 | **Error Pages** | Halaman 404 & error handler dengan UI yang konsisten |
 | **Typing Animation** | Hero section dengan efek typing teks berulang |
 
-## Screenshots
-
-<div align="center">
-
-| Light Mode | Dark Mode |
-|:---:|:---:|
-| <img src="src/assets/images/turdif-light.JPG" alt="Light Mode" width="400" /> | <img src="src/assets/images/turdif-dark.JPG" alt="Dark Mode" width="400" /> |
-
-</div>
-
 ## Tech Stack
 
-<div align="center">
 
 | Kategori | Teknologi |
 |----------|-----------|
@@ -58,7 +47,6 @@
 | Icons | Lucide React |
 | Font | Bricolage Grotesque (heading) + Geist Sans (body) |
 
-</div>
 
 ## Struktur Proyek
 
@@ -162,4 +150,4 @@ npx prettier .    # format kode
 
 ## License
 
-[MIT License](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file) © 2025 Turdif
+[MIT License](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file) © 2024 Turdif
