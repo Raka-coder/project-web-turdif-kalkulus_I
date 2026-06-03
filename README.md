@@ -1,126 +1,165 @@
 
-# Project Web Turunan Diferensial (turdif) - Kalkulus I
+<div align="center">
 
-Project ini dibuat bertujuan untuk menjadi media pembelajaran sehingga orang-orang akan lebih mudah untuk memahami materi turunan diferensial. Pada project ini sudah dilengkapi dengan kalkulator turunan diferensial sehingga dapat memudahkan dalam proses mengerjakan soal turunan.
+  <img src="src/assets/logo/Logo Biru.png" alt="turdif Logo" width="100" />
 
-![Image](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/blob/3eca74195111d0be53cac61bb1a6a971914d92c6/src/assets/images/turdif-light.JPG)
+  # Turdif — Turunan Diferensial
 
-![Image](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/blob/3eca74195111d0be53cac61bb1a6a971914d92c6/src/assets/images/turdif-dark.JPG)
+  **Platform pembelajaran interaktif Kalkulus I** dengan kalkulator turunan diferensial langkah-demi-langkah, materi visual, dan MathJax-powered formula rendering.
+
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file)
+  ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+  ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)
+
+</div>
+
+---
+
+## Tentang
+
+**Turdif** (Turunan Diferensial) adalah web app interaktif yang dirancang untuk membantu mahasiswa memahami konsep dasar turunan diferensial. Dilengkapi dengan kalkulator pintar yang menampilkan langkah penyelesaian secara visual menggunakan notasi matematika, serta materi pembelajaran yang tersusun sistematis.
+
+## Fitur
+
+| Fitur | Deskripsi |
+|-------|-----------|
+| **Kalkulator Turunan** | 4 mode: Umum (polinomial), Trigonometri, Eksponensial & Logaritma, serta Referensi rumus |
+| **Materi Interaktif** | 8 topik turunan dengan navigasi sidebar, notasi matematika, dan penjelasan step-by-step |
+| **Notasi Matematika** | Render LaTeX & AsciiMath via MathJax — fraksi, pangkat, trigonometri, limit, dll |
+| **Dark / Light Mode** | Toggle tema dengan persistensi localStorage |
+| **Smooth Scroll** | Navigasi GSAP-powered scroll ke section Home, Materi, Team |
+| **Responsive** | Mobile-first, sheet navigation di mobile, grid responsif |
+| **Error Pages** | Halaman 404 & error handler dengan UI yang konsisten |
+| **Typing Animation** | Hero section dengan efek typing teks berulang |
+
+## Screenshots
+
+<div align="center">
+
+| Light Mode | Dark Mode |
+|:---:|:---:|
+| <img src="src/assets/images/turdif-light.JPG" alt="Light Mode" width="400" /> | <img src="src/assets/images/turdif-dark.JPG" alt="Dark Mode" width="400" /> |
+
+</div>
+
+## Tech Stack
+
+<div align="center">
+
+| Kategori | Teknologi |
+|----------|-----------|
+| Framework | React 19 + React Router 7 |
+| Build Tool | Vite 8 |
+| Styling | Tailwind CSS 4 + shadcn/ui |
+| Animasi | GSAP (ScrollTo) + AOS |
+| Matematika | MathJax 3 + better-react-mathjax |
+| Markdown | react-markdown |
+| Icons | Lucide React |
+| Font | Bricolage Grotesque (heading) + Geist Sans (body) |
+
+</div>
+
+## Struktur Proyek
+
+```
+src/
+├── assets/              # Logo, gambar tim, font
+├── components/
+│   ├── calculator/      # Tab kalkulator (Umum, Trig, Eksponensial, Referensi)
+│   ├── landing/         # Hero, Materi, Notasi, Team sections
+│   ├── ui/              # 54+ komponen shadcn/ui
+│   ├── Layout.jsx       # Outlet + Navbar + Footer wrapper
+│   ├── Navbar.jsx       # Fixed navbar + GSAP scroll
+│   ├── Footer.jsx       # Footer + GSAP scroll
+│   ├── ErrorBoundary.jsx
+│   ├── MathJaxMath.jsx  # InlineMath, BlockMath, AsciiMath
+│   ├── MarkdownRenderer.jsx
+│   ├── ThemeContext.jsx  # Dark mode provider
+│   └── TextType.jsx     # Typing animation
+├── pages/
+│   ├── LandingPage.jsx
+│   ├── CalculatorPage.jsx
+│   ├── NotFoundPage.jsx # 404
+│   └── ErrorPage.jsx    # Generic error
+├── hooks/
+├── lib/
+├── App.jsx              # Routes + MathJaxContext
+├── main.jsx             # Entry point
+└── index.css            # Tailwind + theme variables
+```
+
+## Prerequisites
+
+| Dependency | Version |
+|------------|---------|
+| Node.js | >= 20.10.0 |
+| npm | >= 10.2.3 |
+
+## Instalasi & Pengembangan Local
+
+**1. Clone repository**
+
+```bash
+git clone https://github.com/Raka-coder/project-web-turdif-kalkulus_I.git
+cd project-web-turdif-kalkulus_I
+```
+
+**2. Install dependencies**
+
+```bash
+npm install
+```
+
+**3. Jalankan development server**
+
+```bash
+npm run dev
+```
+
+Buka [http://localhost:5173](http://localhost:5173) di browser.
+
+**4. Build untuk produksi**
+
+```bash
+npm run build
+npm run preview   # preview build di http://localhost:4173
+```
+
+**5. Lint & Format**
+
+```bash
+npm run lint      # jalankan ESLint
+npx prettier .    # format kode
+```
+
+## Scripts
+
+| Script | Deskripsi |
+|--------|-----------|
+| `npm run dev` | Jalankan Vite dev server |
+| `npm run build` | Build untuk produksi |
+| `npm run preview` | Preview build produksi |
+| `npm run lint` | Jalankan ESLint |
+
+## Routes
+
+| Path | Halaman |
+|------|---------|
+| `/` | Landing page (Hero + Materi + Team) |
+| `/kalkulator` | Kalkulator turunan diferensial |
+| `/error` | Halaman error |
+| `*` | 404 Not Found |
 
 ## Authors
 
-- Github: [Ginanjar Abdul Hakim](https://www.github.com/Maruzensky98)
-
-- Github: [Luthfi Apriliansyah](https://www.github.com/Luthfi778)
-
-- Github: [Raka Restu Saputra](https://www.github.com/Raka-coder)
-
-- Github: [Tazril Dwi Aprila](https://www.github.com/12345678167)
-
-## Features
-
-- Single Page
-- Light/dark mode button
-- Responsive 
-
-## React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-## Prerequisites
-- node => v20.10.0
-- npm  => v10.2.3
-
-## Installation & Setup
-
-Install project with vite
-
-```bash
-  npm create vite@latest
-  or
-  npm create vite@latest project-app -- --template react
-
-  cd project-app
-  npm install
-```
-Install Tailwind css to the project-app
-
-Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
-```bash
-  npm install -D tailwindcss postcss autoprefixer
-  npx tailwindcss init -p
-```
-Add the paths to all of your template files in your tailwind.config.js file.
-```bash
-  /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
-```bash
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-```
-Start run the project-app, run your build process with npm run dev.
-```bash
-  npm run dev
-```
-    
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Raka-coder/project-web-turdif-kalkulus_I.git
-```
-
-Go to the project directory
-
-```bash
-  cd project-app
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-## Tech Stack
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=vite" height="40" alt="vite logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-  <img width="10" />
-  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="40" alt="tailwindcss logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" alt="npm logo"  />
-  <img width="10" />
-  <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="40" alt="nodejs logo"  />
-</div>
+| Nama | GitHub |
+|------|--------|
+| **Ginanjar Abdul Hakim** | [@Maruzensky98](https://github.com/Maruzensky98) |
+| **Luthfi Apriliansyah** | [@Luthfi778](https://github.com/Luthfi778) |
+| **Raka Restu Saputra** | [@Raka-coder](https://github.com/Raka-coder) |
+| **Tazril Dwi Aprila** | [@12345678167](https://github.com/12345678167) |
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file)
-
+[MIT License](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/tree/main?tab=MIT-1-ov-file) © 2025 Turdif
