@@ -1,21 +1,18 @@
-# Security Policy
+# Kebijakan Keamanan (Security Policy)
 
-## Supported Versions
+## Versi yang Didukung
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Keamanan dan pembaruan dependensi diterapkan pada branch utama (`main`).
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Versi | Didukung |
+| ----- | -------- |
+| main  | :white_check_mark: |
 
-## Reporting a Vulnerability
+## Melaporkan Kerentanan (Reporting a Vulnerability)
 
-Use this section to tell people how to report a vulnerability.
+Jika Anda menemukan potensi kerentanan atau celah keamanan dalam proyek ini, kami sangat menghargai kerja sama Anda untuk melaporkannya secara bertanggung jawab:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Jangan membuat issue publik** untuk masalah keamanan yang kritis.
+2. Laporkan secara privat melalui fitur [GitHub Security Advisories](https://github.com/Raka-coder/project-web-turdif-kalkulus_I/security/advisories/new) atau hubungi maintainer proyek secara langsung.
+3. Sertakan deskripsi detail mengenai kerentanan, langkah-langkah reproduksi (PoC), dan dampak potensialnya.
+4. Kami akan meninjau laporan dan memberikan respons secepat mungkin.

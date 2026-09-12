@@ -1,3 +1,17 @@
+# Dependencies & Build
 node_modules
 dist
 plan.md
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs & OS artifacts
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

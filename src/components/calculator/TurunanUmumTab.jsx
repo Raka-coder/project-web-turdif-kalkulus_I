@@ -66,13 +66,19 @@ export default function TurunanUmumTab({ onCalculate }) {
   const [error, setError] = useState("")
 
   const hitung = () => {
-    if (!fx.trim()) {
+    const trimmed = fx.trim()
+    if (!trimmed) {
       setError("Masukkan fungsi f(x) terlebih dahulu.")
       setResult(null)
       return
     }
+    if (trimmed.length > 200) {
+      setError("Input fungsi terlalu panjang (maksimum 200 karakter).")
+      setResult(null)
+      return
+    }
     try {
-      let terms = parsePolinomial(fx)
+      let terms = parsePolinomial(trimmed)
       if (!terms.length) {
         setError("Format fungsi tidak dikenali. Gunakan format: 3x^2 + 2x - 5")
         setResult(null)

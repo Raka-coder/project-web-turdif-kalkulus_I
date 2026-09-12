@@ -2,12 +2,21 @@ import { useMemo } from "react"
 import PropTypes from "prop-types"
 import * as katex from "katex"
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+}
+
 function renderMath(math, displayMode) {
   if (!math || typeof math !== "string") return ""
   try {
     return katex.renderToString(math, { displayMode, throwOnError: false, strict: false })
   } catch {
-    return `<span style="color:red">Error: ${math}</span>`
+    return `<span style="color:red">Error: ${escapeHtml(math)}</span>`
   }
 }
 
