@@ -11,7 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@base-ui/react": "^1.5.0",
+    "@base-ui/react": "^1.7.0",
     "@fontsource-variable/bricolage-grotesque": "^5.2.10",
     "@fontsource-variable/geist": "^5.2.9",
     "@gsap/react": "^2.1.2",
